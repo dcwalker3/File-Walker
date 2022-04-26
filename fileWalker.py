@@ -21,7 +21,7 @@ def fileWalker(path, depth=0, depthLimit=None, outputFile=None, verbose=True, re
     if(outputFile):
         outputFile.write(" "*depth + path + "\n") 
     elif(verbose):
-        print(path)
+        print(" "*depth + path)
 
     # Loop through the contents
     for item in dirContents:
