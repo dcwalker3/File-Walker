@@ -45,3 +45,10 @@ For Windows:
     -e, --extension: File extension to search for
     -m, --maxdepth: Maximum depth to search (default: None)
     -o, --output: Output file
+
+
+## Future:
+
+I hope to be able to continue this project in the future by adding more and more utility features to it
+(or just creating another standalone application), so please stay tuned and feel free to mention if you 
+have any ideas on what would be a good idea to add.

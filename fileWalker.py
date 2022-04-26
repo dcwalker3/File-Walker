@@ -23,7 +23,6 @@ def fileWalker(path, depth=0, depthLimit=None, outputFile=None, verbose=True, re
     elif(verbose):
         print(path)
 
-    print("Iterating through directory contents...")
     # Loop through the contents
     for item in dirContents:
         
@@ -46,7 +45,7 @@ def fileWalker(path, depth=0, depthLimit=None, outputFile=None, verbose=True, re
         # If the item is a file then output it by console or file.
         elif(os.path.isfile(os.path.join(path, item))):
             if(verbose):
-                print((" "*depth+1) + "~ " + item)
+                print(" "*(depth+1) + "~ " + item)
 
             elif(outputFile is not None):
                 outputFile.write(" "*(depth+1) + "~ " + item + "\n")

@@ -28,7 +28,7 @@ def main(argv):
     file = None
     search = False
     walk = False
-    verbose = True
+    verbose = False
     count = False
     outputFile = None
     recursive = True
@@ -95,6 +95,7 @@ def main(argv):
         
     # Launch file utility function that controls file walker and searcher.    
     try:
+        
         fileUtility(path=dir, depthLimit=maxDepth, extension=extension, recursive=recursive, search=search, walk=walk, time=time, count=count, outputFile=outputFile, verbose=verbose, file=file)
     
     except Exception as e:
